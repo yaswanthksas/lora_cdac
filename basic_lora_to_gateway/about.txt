@@ -1,0 +1,17 @@
+rfm9x with stm32l152re 
+
+1. go to sx1276mb1mas_conf.h to get the pin mapping details 
+2. Now, register a end node in ttn server 
+3. update se-identify.h 
+    --> otaa 
+    --> appeui/joineui -- any unique id you can give like 
+                       -- 12 12 12 12 12 12 12 12 
+                       -- generate deveui and appkey
+    here, before activation appkey of lora_end_node and gateway nework server same 
+    here, payload we send in the encrypted form. 
+
+4. go to commissioning.h and update lora network id : 0x15. (you can give any 8 bit)
+
+5. then build and debug 
+
+6. see payload formatting and extract the encode message.
