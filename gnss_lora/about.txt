@@ -1,0 +1,1 @@
+contains all the details sending data to gateway using lorawan communication 
